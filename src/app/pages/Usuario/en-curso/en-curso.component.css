@@ -1,0 +1,52 @@
+.saludo{
+	position: absolute;
+    font: bold;
+    font-size: 50px;
+    top: 105px;
+    left: 369px;
+    font-family: "Gotham Black";
+}
+.nombre{
+	position: absolute;
+    font: bold;
+    font-size: 50px;
+    top: 169px;
+    left: 383px;
+    font-family: "Gotham Black";
+}
+.imagen{
+	position: absolute;
+    top: 60px;
+    left: 1290px;
+}
+.curso{
+    position: relative;
+    margin: 0px 90px 0px 50px;
+    top: 50px;
+    left: 25px;
+    width: 380px;
+    height: 135px;
+    background: #FAFAFA;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 2px 2px 2px #00000029;
+}
+.losCurso{
+    position: absolute;
+    top: 357px;
+    left: 410px;
+    width: 1142px;
+    height: 600px;
+    /* background: black;    */
+    border-radius: 25px 25px 25px 25px;
+    /* box-shadow: 2px 2px 2px 2px #00000029; */
+}
+.mapa{
+    position: relative;
+    top: -59px;
+    left: 229px;
+    width: 310px;
+    height: 366px;
+    background: #FFFFFF;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 2px 2px 2px #00000029;
+}

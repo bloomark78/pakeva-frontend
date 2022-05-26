@@ -1,0 +1,85 @@
+.navegar{
+	/* margin: 0px 0; */
+	position: relative;
+	border: 2px solid #707070;
+	color: #E0E0E02B;
+}
+
+ul {
+	list-style-type: none;
+	/* border: 2px solid #707070; */
+    /* position: relative; */
+    /* top: 0px; */
+    /* width: 100%; */
+    right: 0%;
+    padding: 0px;
+    height: 83px;
+    overflow: hidden;
+    background-color: #E0E0E02B;
+	/* margin-top: 0; */
+  	margin-bottom: 0rem;
+	
+  }
+  
+  li {
+	border-radius: 20px 20px 20px 20px;
+	float: left;
+
+  }
+  
+  li a {
+	display: block;
+	color: #58595B;
+	line-height: 1.2em;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 20px 20px 20px 20px;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+	border: 2px solid #FC9020;
+	color: #FC9020;
+	border-radius: 20px 20px 20px 20px;
+  }
+
+  .active {
+	margin: 10px 15px 0px 15px;
+	font: bold ;
+	font-size: 15px;
+	font-family: "Gotham Black";
+  }
+  .actives {
+	margin: 10px 15px 0px 15px;
+    border: 2px solid #FC9020;
+    font: bold;
+    font-size: 15px;
+    font-family: "Gotham Black";
+  }
+
+  .acti {
+	margin: 25px;
+	background-color: #00a775;
+	font: bold ;
+	font-size: 15px;
+	height: 35px;
+	width: 142px;
+	font-family: "Gotham Black";
+	color: #ffff;
+  }
+
+  .ingresar{
+	 margin-top: -8px; 
+	 border-radius: 20px 20px 20px 20px;
+	font: bold ;
+	font-size: 13px;
+	font-family: "Gotham Black";
+	color: #ffff;
+  }
+
+.imagen{
+	position: relative;
+	left: 79px;
+    top: 30px;
+}

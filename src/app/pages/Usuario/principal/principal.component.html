@@ -1,0 +1,139 @@
+<app-menu-entrada></app-menu-entrada>
+<div >
+	<img class="imagen" src="./assets/Web/pakeva.png" width="220px" height="100px">
+	<label class="saludo">¡Hola!</label>
+	<label class="nombre">{{usuario.name}}</label>
+</div>
+<!-- este es el formulario de envio -->
+<form (ngSubmit)="cotiza()"
+		[formGroup]="enviar">
+	<div class="envios">
+		<div class="sobre">
+			<input type="checkbox">
+				<img src="./assets/Web/SOBRE.svg" width="90px" >			
+		</div>
+		<div class="caja">
+			<input type="checkbox">
+				<img src="./assets/Web/CAJA.svg"  width="100px" >
+		</div>
+		<label class="texto"><p>Largo:</p> </label> 
+		<label class="texto1"> <p>Ancho:</p> </label>
+		<label class="texto2"><p>Alto:</p></label>
+		<label class="texto3"><p>Peso:</p> </label>
+		<div class="cajatexto">
+			<div>
+				<input class="cajas"		
+					type="text"
+					name="largo"
+					placeholder="cm"
+					formControlName="largo"
+					[class.is-invalid]="largoInvalido">
+						<!-- <small *ngIf="largoInvalido" class="text-danger">
+							Necesario
+						</small> -->
+			</div>
+			<div>
+				<input class="cajas"		
+					type="text"
+					name="cm"
+					placeholder="cm"
+					formControlName="ancho"
+					[class.is-invalid]="anchoInvalido">
+					<!-- <small *ngIf="anchoInvalido" class="text-danger">
+						Necesario
+					</small> -->
+						
+			</div>
+			<div>
+				<input class="cajas"		
+					type="text"
+					name="cm"
+					placeholder="cm"
+					formControlName="alto"
+					[class.is-invalid]="altoInvalido">
+						<!-- <small *ngIf="altoInvalido" class="text-danger">
+							Necesario
+						</small> -->
+			</div>
+			<div>
+				<input class="cajas"		
+					type="text"
+					name="kg"
+					placeholder="kg"
+					formControlName="peso"
+					[class.is-invalid]="pesoInvalido">
+						<!-- <small *ngIf="pesoInvalido" class="text-danger">
+							Necesario
+						</small> -->
+			</div>
+
+		</div>
+		<!-- Aqui es el registro de portal -->
+		<div class="postal">
+			<label class="envioPostal">Código postal de ubicacación</label>
+			<div>
+				<input class="cajaPostal"		
+					type="text"
+					name="origen"
+					placeholder="Origen de envío"
+					formControlName="origin"
+					[class.is-invalid]="cpOrigenInvalido">
+						<!-- <small *ngIf="cpOrigenInvalido" class="text-danger">
+							Necesario
+						</small> -->
+			</div>
+			<label class="envioPostal">Código postal de envío</label>
+			<div>
+				<input class="cajaPostal"		
+					type="text"
+					name="destino"
+					placeholder="Lugar de envío"
+					formControlName="destination"
+					[class.is-invalid]="cpDestinoInvalido">
+						<!-- <small *ngIf="cpDestinoInvalido" class="text-danger">
+							Necesario
+						</small> -->
+			</div>
+			<label class="envioPostal">Foto del producto</label>
+			<div class="fotos">
+				<div class="file-select" id="src-file1" >
+					<input type="file" name="src-file1" aria-label="Archivo" enctype="multipart/form-data"accept="image/ .jpeg, .jpg" (change)="cajaAbierta($event)">
+				</div>
+				
+				<div class="file-select" id="src-file2" >
+					<input type="file" name="src-file1" aria-label="Archivo" enctype="multipart/form-data"accept="image/png, .jpeg, .jpg" (change)="cajaCerrada($event)">
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="container-login100-form-btn m-t-17">
+		<button class="boton" type="submit" (click)="cotizar()" >
+			Cotizar
+		</button>
+	</div>
+
+</form>
+<div class="muestraCoti">
+
+<table class="table">
+	<thead class="table-header">
+		<th>Compañia</th>
+		<th>Peso</th>
+		<th>C.P Origen</th>
+		<th>C:P Destino</th>
+		<th>Aceptar</th>
+	</thead>
+	<tbody *ngFor="let e of cotizacion; let i= index">
+		<td>RedPack</td>
+		<td>{{e.peso}}</td>
+		<td>{{e.origin}}</td>
+		<td>{{e.destination}}</td>
+		<td>
+			<input type="checkbox" name="e.id" class="check" >
+		</td>
+	</tbody>
+
+</table>
+
+</div>

@@ -1,0 +1,38 @@
+<app-menu-principal></app-menu-principal>
+
+<img class="imagen" src="./assets/Web/cajas.png" width="100%" height="800">
+	<p class="texto1">TU ENVÍO</p>
+	<P class="texto2">EN UN CLICK</P>
+<div class="login">
+	<form   (ngSubmit)="valida()"
+                        [formGroup]="validar"
+                        class="login100-form validate-form flex-sb flex-w">
+                        <p class="txt1">Verificación de Cuenta</p>                    
+						<div >
+							<input class="caja"		
+								   type="text"
+								   name="email"
+								   placeholder="Pin de Verificacion"
+								   formControlName="pin"
+								   [class.is-invalid]="accesoInvalido">
+								   <small *ngIf="accesoInvalido" class="text-danger">
+									   ingrese al menos 8 caracteres
+								   </small>
+		
+							<span class="focus-input100"></span>
+						</div>
+                    <div>
+                        <a (click)="reenviar()" class="texto3">
+                            Volver a Mandar Pin 
+                        </a>
+                        
+                    </div>
+                    <div class="container-login100-form-btn m-t-17">
+                      <button class="boton" type="submit" ng >
+                          Validar Cuenta
+                      </button>
+                  </div>
+
+          </form>
+
+</div>

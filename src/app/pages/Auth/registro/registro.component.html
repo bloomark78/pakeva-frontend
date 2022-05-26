@@ -1,0 +1,101 @@
+<app-menu-principal></app-menu-principal>
+<img class="imagen" src="./assets/Web/cajas.png" width="100%" height="900">
+	<p class="texto1">TU ENVÍO</p>
+	<P class="texto2">EN UN CLICK</P>
+<div class="login">
+	<form  (ngSubmit)="registrar()"
+                    class="login100-form validate-form flex-sb flex-w">
+			<form [formGroup]="registro">
+                <div>
+                    <input class="caja"		
+                           type="text"
+                           name="email"
+                           placeholder="Email"
+                           formControlName="email"
+                           [class.is-invalid]="emailInvalido">
+                           <small *ngIf="emailInvalido" class="alerta">
+                               Ingresa un correo Valido
+                           </small>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div  data-validate = "Password is required">
+                    <input class="caja"
+                           type="password"
+                           name="pass"
+                           placeholder="Password"
+                           formControlName="password"
+                           [class.is-invalid]="passwordInvalido">
+                           <small *ngIf="passwordInvalido" class="alerta">
+                               La contraseña es necesaria
+                           </small>
+                    <span class="focus-input100"></span>
+                </div>
+					<div  data-validate = "Password is required">
+						<input class="caja"
+							type="text"
+							name="nombre"
+							placeholder="Nombre"
+							formControlName="name"
+							[class.is-invalid]="nameInvalido">
+							<small *ngIf="nameInvalido" class="alerta">
+								El nombre es necesario
+							</small>
+						<span class="focus-input100"></span>
+					</div>
+					<div  data-validate = "Password is required">
+						<input class="caja"
+							type="text"
+							name="A_P"
+							placeholder="Apellido Paterno"
+							formControlName="A_P"
+							[class.is-invalid]="A_PInvalido">
+							<small *ngIf="A_PInvalido" class="alerta">
+								El Apellido Paterno es necesario
+							</small>
+						<span class="focus-input100"></span>
+					</div>
+					<div  data-validate = "Password is required">
+						<input class="caja"
+							type="text"
+							name="A_M"
+							placeholder="Apellido Materno"
+							formControlName="A_M"
+							[class.is-invalid]="A_MInvalido">
+							<small *ngIf="A_MInvalido" class="alerta">
+								El Apellido Materno es necesario
+							</small>
+						<span class="focus-input100"></span>
+					</div>
+					<div  data-validate = "Password is required">
+						<input class="caja"
+							type="text"
+							name="cellphone"
+							placeholder="Numero Particular"
+							formControlName="cellphone"
+							[class.is-invalid]="celphoneInvalido">
+							<small *ngIf="celphoneInvalido" class="alerta">
+								El Numero Particular es necesario
+							</small>
+						<span class="focus-input100"></span>
+					</div>
+					<div  data-validate = "Password is required">
+						<input class="caja"
+							type="text"
+							name="genero"
+							placeholder="Genero"
+							formControlName="gender"
+							[class.is-invalid]="genderInvalido">
+							<small *ngIf="genderInvalido" class="alerta">
+								El genero es necesario
+							</small>
+						<span class="focus-input100"></span>
+					</div>
+				</form>
+                <div class="container-login100-form-btn m-t-17">
+                    <button class="boton" type="submit">
+                        REGISTRARME
+                    </button>
+                </div>
+		</form>
+</div>

@@ -1,0 +1,46 @@
+.saludo{
+	position: absolute;
+    font: bold;
+    font-size: 50px;
+    top: 105px;
+    left: 369px;
+    font-family: "Gotham Black";
+}
+.nombre{
+	position: absolute;
+    font: bold;
+    font-size: 50px;
+    top: 169px;
+    left: 383px;
+    font-family: "Gotham Black";
+}
+.imagen{
+	position: absolute;
+    top: 60px;
+    left: 1290px;
+}
+.imagenes{
+    position: absolute;
+    top: 277px;
+    left: 546px;
+    width: 945px;
+    height: 175px;
+    fill: black;
+    /* border: 2px solid #707070; */      
+}
+.svgs{
+    position: relative;
+    top: 10px;
+    margin: 0px 25px;
+    fill: black;
+}
+.datos{
+    position: absolute;
+    top: 522px;
+    left: 389px;
+    width: 1160px;
+    height: 400px;
+    background: #FAFAFA;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 2px 2px 2px #e7eaf0;
+}

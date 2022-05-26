@@ -1,0 +1,73 @@
+<app-menu-principal></app-menu-principal>
+
+<img class="imagen" src="./assets/Web/cajas.png" width="100%" height="800">
+	<p class="texto1">TU ENVÍO</p>
+	<P class="texto2">EN UN CLICK</P>
+<div class="login">
+	<form  [formGroup]="login" (ngSubmit)="logeo()"
+                    class="login100-form validate-form flex-sb flex-w">
+                <div >
+                    <input class="caja"		
+                           type="text"
+                           name="email"
+                           placeholder="Usuario"
+                           formControlName="email"
+                           [class.is-invalid]="accesoInvalido">
+                           <small *ngIf="accesoInvalido" class="alerta">
+                               Ingrese al menos 8 caracteres
+                           </small>
+
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div  data-validate = "Password is required">
+                    <input class="caja"
+                           type="password"
+                           name="pass"
+                           placeholder="Password"
+                           formControlName="password"
+                           [class.is-invalid]="passwordInvalido">
+                           <small *ngIf="passwordInvalido" class="alerta">
+                               La contraseña es necesaria
+                           </small>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="recuerdame">
+                    <div >
+                        <input  class="recuerda"
+                                type="checkbox"
+                                id="flexCheckDefault"
+                                name="lunes">
+                        <label class="recuerda"  >
+                          Recordarme
+                        </label>
+                      </div>
+
+                    <div class="registrar">                        
+                            ¿No cuentas con cuenta? <label routerLink="/registro" class="txt1">Registrate</label>
+                       
+                        
+                    </div>
+                    <div routerLink="/colaborador" class="pin">
+                        
+                            Validar Pin
+                        
+                        
+                    </div>
+                    <div routerLink="/recuperarContra" class="contra">
+                        
+                            ¿Olvidaste la contraseña?
+                        
+                    </div>
+                </div>
+
+                <div class="container-login100-form-btn m-t-17">
+                    <button class="boton" type="submit" [disabled]="login.invalid == true">
+                        INICIAR SESIÓN
+                    </button>
+                </div>
+
+            </form>
+
+</div>

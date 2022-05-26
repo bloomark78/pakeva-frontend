@@ -1,0 +1,100 @@
+.cuerpo{
+	position: relative;
+    /* border: 2px solid #707070; */
+    top: 160px;
+    width: 344px;
+}
+.entrada{
+  position: relative;
+  border: 2px solid #FAA31B;
+  width: 340px;
+  height: 810px;
+  top: 0px;
+  background: #FAA31B;
+  border-radius: 0px 20px 0px 0px;
+}
+.imagen{
+	position: absolute;
+    top: -142px;
+    left: 93px;
+}
+.texto1{
+	position: absolute;
+    font-size: 20px;
+    top: 60px;
+    left: 25px;
+    font-family: "Gotham Black";
+}
+.texto2{
+	position: absolute;
+    font-size: 20px;
+    top: 304px;
+    left: 25px;
+    font-family: "Gotham Black";
+}
+
+ul {
+	list-style-type: none;
+    position: absolute;
+    top: 96px;
+    width: 100%;
+    right: 6%;
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+	
+  }
+  
+  li {
+	border-radius: 20px 20px 20px 20px;
+	/* float: left; */
+
+  }
+  
+  li a {
+	display: block;
+    color: black;
+    background-color: #F7F1E7;
+    line-height: 1.2em;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 0px 20px 20px 0px;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+	border: 2px solid #ffff;
+	color: #ffffff;
+	background-color: #FAA31B;
+	border-radius: 0px 20px 20px 0px;
+  }
+
+  .active {
+	margin: 10px 15px 0px 15px;
+	font: bold ;
+	font-size: 15px;
+	font-family: "Gotham Black";
+  }
+
+.segundo{
+	position: relative;
+    top: 350px
+}
+.sesion{
+	position: relative;
+  top: 547px;
+}
+.imagen1{
+  position: absolute;
+  left: 0px;
+}
+.cuadro{
+  position: absolute;
+  top: 90px;
+  left: 304px;
+  width: 340px;
+  height: 171px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: #E0E0E0AF;
+}
